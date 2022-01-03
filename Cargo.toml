@@ -1,0 +1,25 @@
+[package]
+name = "sqlx_tests"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = "1.0.133"
+
+[dependencies.tokio]
+version = "1.15.0"
+features = ["macros", "rt-multi-thread", "parking_lot"]
+
+[dependencies.figment]
+version = "0.10.6"
+features = ["toml"]
+
+[dependencies.sqlx]
+version = "0.5.10"
+features = ["postgres", "runtime-tokio-native-tls", "uuid"]
+
+[dependencies.uuid]
+version = "0.8.2"
+features = ["v4"]
